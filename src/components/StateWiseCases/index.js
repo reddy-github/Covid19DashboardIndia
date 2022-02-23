@@ -319,5 +319,20 @@ class StateWiseCases extends Component {
       </>
     )
   }
+  render() {
+    const {isLoading} = this.state
+    return (
+      <div className="">
+        <Header />
+        <div className="single-state-main-container">
+          <div className="state-content-container">
+            {isLoading ? this.renderLoader() : this.renderStateView()}
+          </div>
+        </div>
+        <Footer />
+      </div>
+    )
+  }
+}
 
- 
+export default StateWiseCases
