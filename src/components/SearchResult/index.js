@@ -6,8 +6,8 @@ const SearchResult = props => {
   const {statename, statecode} = props
 
   return (
-    <li>
-      <Link to={`/state/${statecode}`} className="link-search">
+    <Link to={`/state/${statecode}`} className="link-search">
+      <li>
         <div className="search-result">
           <h1 className="search-result-heading font-face-gm">{statename}</h1>
 
@@ -20,8 +20,8 @@ const SearchResult = props => {
             />
           </button>
         </div>
-      </Link>
-    </li>
+      </li>
+    </Link>
   )
 }
 

@@ -31,7 +31,7 @@ class Header extends Component {
         <div className="header-container">
           <Link to="/" className="link">
             <h1 className="logo">
-              COVID19<spam className="india">INDIA</spam>
+              COVID19<span className="india">INDIA</span>
             </h1>
           </Link>
           <ul className="navBar">
@@ -47,7 +47,7 @@ class Header extends Component {
           <div className="mobile-header-container">
             <Link to="/" className="link">
               <h1 className="logo">
-                COVID19<spam className="india">INDIA</spam>
+                COVID19<span className="india">INDIA</span>
               </h1>
             </Link>
             <button

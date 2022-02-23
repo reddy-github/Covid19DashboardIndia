@@ -291,7 +291,7 @@ class StateWiseCases extends Component {
           </div>
         </div>
 
-        <div className="total-district-data-block" testid="lineChartsContainer">
+        <div className="total-district-data-block">
           <h1 className={`district-heading ${category}-color`}>
             Top Districts
           </h1>
@@ -311,7 +311,8 @@ class StateWiseCases extends Component {
               </ul>
             </div>
           </div>
-          <div className="graphs-data" testid="lineChartsContainer">
+
+          <div className="graphs-data">
             <ChartsData stateCode={stateCode} category={category} />
           </div>
         </div>

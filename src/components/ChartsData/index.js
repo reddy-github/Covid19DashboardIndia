@@ -155,7 +155,7 @@ class ChartsData extends Component {
       <div className="barChart-container">{this.barChart()}</div>
 
       <h1 className="charts-title">Spread Trends</h1>
-      <div testid="lineChartsContainer" className="barCharts-container">
+      <div className="barCharts-container" testid="lineChartsContainer">
         <div className="charts confirmed-background">
           {this.graph('confirmed', '#FF073A')}
         </div>
