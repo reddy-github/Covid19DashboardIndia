@@ -319,6 +319,7 @@ class StateWiseCases extends Component {
       </>
     )
   }
+
   render() {
     const {isLoading} = this.state
     return (
