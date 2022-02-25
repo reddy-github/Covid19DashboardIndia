@@ -179,7 +179,7 @@ class StateWiseCases extends Component {
     const {match} = this.props
     const {params} = match
     const {stateCode} = params
-    const apiUrl = `https://apis.ccbp.in/covid19-state-wise-data/`
+    const apiUrl = `https://apis.ccbp.in/covid19-state-wise-data`
     const options = {
       method: 'GET',
     }

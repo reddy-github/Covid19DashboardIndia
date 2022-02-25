@@ -406,11 +406,13 @@ class Home extends Component {
 
   render() {
     const {isLoading, filteredSearchList, search} = this.state
+
     const showSearchList =
       filteredSearchList.length === 0 ? '' : this.showSearchList()
     return (
       <>
         <Header />
+
         <div className="home-container">
           <div className="home-content-container">
             <div className="search-container">
@@ -436,6 +438,7 @@ class Home extends Component {
             )}
           </div>
         </div>
+
         <Footer />
       </>
     )

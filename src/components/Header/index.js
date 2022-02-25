@@ -14,11 +14,27 @@ class Header extends Component {
     <>
       <ul className="navBarMenu">
         <Link to="/" className="link">
-          <li className="item">Home</li>
+          <li className="item" onClick={this.whenToggleButtonClick}>
+            Home
+          </li>
         </Link>
         <Link to="/about" className="link">
-          <li className="item">About</li>
+          <li className="item" onClick={this.whenToggleButtonClick}>
+            About
+          </li>
         </Link>
+
+        <button
+          type="button"
+          onClick={this.whenToggleButtonClick}
+          className="toggle-button"
+        >
+          <img
+            src="https://res.cloudinary.com/saicharan/image/upload/v1645807598/Solid_tffgth.png"
+            className="menuIcon"
+            alt="close-icon"
+          />
+        </button>
       </ul>
     </>
   )
@@ -28,21 +44,6 @@ class Header extends Component {
     console.log(isToggleActive)
     return (
       <>
-        <div className="header-container">
-          <Link to="/" className="link">
-            <h1 className="logo">
-              COVID19<span className="india">INDIA</span>
-            </h1>
-          </Link>
-          <ul className="navBar">
-            <Link to="/" className="link">
-              <li className="item">Home</li>
-            </Link>
-            <Link to="/about" className="link">
-              <li className="item">About</li>
-            </Link>
-          </ul>
-        </div>
         <div className="mobile-menu">
           <div className="mobile-header-container">
             <Link to="/" className="link">
@@ -50,6 +51,15 @@ class Header extends Component {
                 COVID19<span className="india">INDIA</span>
               </h1>
             </Link>
+            <ul className="navBar">
+              <Link to="/" className="link">
+                <li className="item">Home</li>
+              </Link>
+              <Link to="/about" className="link">
+                <li className="item">About</li>
+              </Link>
+            </ul>
+
             <button
               type="button"
               className="toggle-button"
